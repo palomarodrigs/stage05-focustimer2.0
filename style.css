@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-card: #e1e1e6;
+  --secondary: #02799d;
+  --text-color: #323238;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 19.6rem;
+}
+
+#timer {
+  flex-direction: column;
+  padding-right: 19.2rem;
+}
+
+span {
+  font-size: 126.166px;
+  line-height: 14.8rem;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+#sounds {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 3.2rem;
+}
+
+#sounds button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-card);
+  width: 13.8rem;
+  height: 15.2rem;
+
+  border-radius: 2.4rem;
+
+  transition: transform 0.3s;
+}
+
+#sounds button:hover {
+  /* transform: scale(1.1); */
+  background-color: red;
+}
