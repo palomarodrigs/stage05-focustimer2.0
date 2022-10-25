@@ -14,11 +14,13 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>FocusTimer</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <main>
       <div id="timer">
-        <span class="minutes">01</span>
+        <span class="minutes">25</span>
         <span>:</span>
         <span class="seconds">00</span>
         <div id="controls">
@@ -78,7 +80,7 @@
               />
             </svg>
           </button>
-          <button class="more-seconds">
+          <button class="increase">
             <svg
               width="48"
               height="48"
@@ -92,7 +94,7 @@
               />
             </svg>
           </button>
-          <button class="less-seconds">
+          <button class="decrease">
             <svg
               width="48"
               height="48"
@@ -175,6 +177,6 @@
         </div>
       </div>
     </main>
-    <script type="module" src="js/main.js"></script>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
