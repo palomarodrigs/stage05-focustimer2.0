@@ -1,4 +1,4 @@
-import Sounds from "./sounds";
+import Sounds from "./sounds.js";
 
 const sound = Sounds;
 export function Timer({ minutesDisplay, secondsDisplay, resetControls }) {
@@ -53,12 +53,12 @@ export function Timer({ minutesDisplay, secondsDisplay, resetControls }) {
 
   function increment() {
     minutes = minutes < 25 ? Number(minutes) + 5 : (minutes = 25);
-    updateTimerDisplay(minutes, 0);
+    updateDisplay(minutes, 0);
   }
 
   function decrement() {
     minutes = minutes > 5 ? Number(minutes) - 5 : (minutes = 0);
-    updateTimerDisplay(minutes, 0);
+    updateDisplay(minutes, 0);
   }
 
   return {

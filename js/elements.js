@@ -4,10 +4,10 @@ const buttonStop = document.querySelector(".stop");
 
 const buttonIncrease = document.querySelector(".increase");
 const buttonDecrease = document.querySelector(".decrease");
-const buttonForest = document.querySelector(".forest-audio");
-const buttonRain = document.querySelector(".rain-audio");
-const buttonStore = document.querySelector(".store-audio");
-const buttonFire = document.querySelector(".fire-audio");
+const buttonForest = document.querySelector(".forest");
+const buttonRain = document.querySelector(".rain");
+const buttonStore = document.querySelector(".store");
+const buttonFire = document.querySelector(".fire");
 
 const svgForest = document.querySelector(".svg-forest");
 const svgRain = document.querySelector(".svg-rain");
