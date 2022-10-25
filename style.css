@@ -6,15 +6,47 @@
 }
 
 :root {
-  --bg-card: #e1e1e6;
-  --secondary: #02799d;
+  --bg-color: #ffffff;
   --text-color: #323238;
+  --bg-card-color: #e1e1e6;
+  --bg-click-card-color: #ccc;
+  --color-fill: #323238;
+  --bg-fill-click: #323238;
 
   font-size: 62.5%;
 }
 
+.dark-theme {
+  --bg-color: #000;
+  --text-color: #ffffff;
+  --bg-card-color: #29292e;
+  --bg-click-card-color: #1f1f23;
+  --bg-fill-click: white;
+  --color-fill: #c4c4cc;
+}
+
+svg {
+  fill: var(--color-fill);
+}
+
+.color-fill {
+  fill: var(--bg-fill-click);
+}
+
+.selected {
+  background: var(--bg-click-card-color) !important;
+}
+
 body {
   font-family: "Roboto";
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+nav {
+  position: fixed;
+  top: 6.4rem;
+  right: 6.4rem;
 }
 
 main {
@@ -61,7 +93,7 @@ button {
   align-items: center;
   justify-content: center;
 
-  background-color: var(--bg-card);
+  background-color: var(--bg-card-color);
   width: 13.8rem;
   height: 15.2rem;
 

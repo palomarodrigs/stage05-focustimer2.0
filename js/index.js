@@ -1,6 +1,9 @@
 import { Controls } from "./controls.js";
 import { Timer } from "./timer.js";
+import { darkMode } from "./theme.js";
 import {
+  buttonDarkMode,
+  buttonLightMode,
   buttonPlay,
   buttonPause,
   buttonStop,
@@ -33,6 +36,11 @@ const timer = Timer({
 });
 
 const sound = Sound();
+
+darkMode({
+  buttonDarkMode,
+  buttonLightMode,
+});
 
 function togglePlay(myAudio) {
   return myAudio.paused ? myAudio.play() : myAudio.pause();
