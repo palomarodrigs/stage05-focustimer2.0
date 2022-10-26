@@ -19,8 +19,11 @@ import {
   svgRain,
   svgStore,
   svgFire,
+  volFire,
+  volRain,
+  volStore,
+  volForest,
 } from "./elements.js";
-
 import Sound from "./sounds.js";
 
 const controls = Controls({
@@ -46,6 +49,8 @@ function togglePlay(myAudio) {
   return myAudio.paused ? myAudio.play() : myAudio.pause();
 }
 
+// EVENTS
+// CONTROLS
 buttonPlay.addEventListener("click", function () {
   controls.play();
   timer.countdown();
@@ -74,6 +79,7 @@ buttonDecrease.addEventListener("click", () => {
   timer.decrement();
 });
 
+// CARD BUTTONS
 buttonForest.addEventListener("click", () => {
   buttonForest.classList.toggle("selected");
   svgForest.classList.toggle("color");
@@ -96,4 +102,21 @@ buttonFire.addEventListener("click", () => {
   buttonFire.classList.toggle("selected");
   svgFire.classList.toggle("color");
   togglePlay(sound.fireAudio);
+});
+
+// CARD VOLUME
+volForest.addEventListener("input", () => {
+  sound.forestAudio.volume = volForest.value;
+});
+
+volRain.addEventListener("input", () => {
+  sound.rainAudio.volume = volRain.value;
+});
+
+volStore.addEventListener("input", () => {
+  sound.storeAudio.volume = volStore.value;
+});
+
+volFire.addEventListener("input", () => {
+  sound.fireAudio.volume = volFire.value;
 });

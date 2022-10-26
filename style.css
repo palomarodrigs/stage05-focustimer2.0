@@ -23,6 +23,8 @@
   --bg-click-card-color: #1f1f23;
   --bg-fill-click: white;
   --color-fill: #c4c4cc;
+
+  transition: 1000ms ease-in-out;
 }
 
 svg {
@@ -98,10 +100,39 @@ button {
   height: 15.2rem;
 
   border-radius: 2.4rem;
+  transition: 1000ms ease;
 
   transition: transform 0.3s;
 }
 
 #sounds button:hover {
   transform: scale(1.1);
+}
+
+.vol {
+  position: absolute;
+  margin: -3rem 2.4rem 0.402rem 2.4rem;
+  width: 9rem;
+}
+
+.vol {
+  -webkit-appearance: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.vol::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 5rem;
+  background: var(--text-color);
+  margin-top: -5px;
+}
+
+.vol::-webkit-slider-runnable-track {
+  height: 0.5rem;
+  background: var(--text-color);
+  border-radius: 5rem;
 }

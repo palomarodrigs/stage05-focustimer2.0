@@ -18,6 +18,11 @@ const svgFire = document.querySelector(".svg-fire");
 const minutesDisplay = document.querySelector(".minutes");
 const secondsDisplay = document.querySelector(".seconds");
 
+const volForest = document.querySelector("#input-forest");
+const volRain = document.querySelector("#input-rain");
+const volStore = document.querySelector("#input-store");
+const volFire = document.querySelector("#input-fire");
+
 export {
   buttonPlay,
   buttonPause,
@@ -36,4 +41,8 @@ export {
   secondsDisplay,
   buttonDarkMode,
   buttonLightMode,
+  volFire,
+  volRain,
+  volStore,
+  volForest,
 };
